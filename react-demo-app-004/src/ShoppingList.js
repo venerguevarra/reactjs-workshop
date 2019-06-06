@@ -20,6 +20,8 @@ function ShoppingList(props) {
                                 </p>
                             </li>
                             )
+                        } else {
+                            return null;
                         }
                     })
                 }
@@ -39,6 +41,8 @@ function ShoppingList(props) {
                                     </span>
                                 </p>
                             </li>
+                        } else {
+                            return null;
                         }
                     })
                 }

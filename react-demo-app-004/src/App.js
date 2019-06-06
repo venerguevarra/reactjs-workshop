@@ -80,7 +80,7 @@ class App extends React.Component {
     });
   }
   handleEnterPress(e) {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 13) {
       this.handleAddItem();
     }
   }
