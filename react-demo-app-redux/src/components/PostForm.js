@@ -31,12 +31,12 @@ class PostForm extends Component {
                 <form className="form" onSubmit={this.handleSubmit}>
                     <input required
                            type="text"
-                           ref={(input)=> this.getTitle = input}
+                           ref={(input) => this.getTitle = input}
                            placeholder="Enter Post Title"/><br /><br />
                     <textarea required
                               rows="5"
                               cols="28"
-                              ref={(input)=>this.getMessage = input}
+                              ref={(input) => this.getMessage = input}
                               placeholder="Enter Post" /><br /><br />
                     <button>Post</button>
                 </form>

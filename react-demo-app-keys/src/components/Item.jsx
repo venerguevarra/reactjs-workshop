@@ -11,16 +11,7 @@ class Item extends React.Component {
         });
     };
 
-    componentDidMount() {
-        console.log("Mounted ", this.props.text);
-    }
-
-    componentWillUnmount() {
-        console.log("Unmounting ", this.props.text);
-    }
-
     render() {
-        console.log("rerendering ", this.props.text);
         const { text } = this.state;
         return (
             <li>

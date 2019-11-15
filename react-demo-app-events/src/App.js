@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 
 class Foo extends React.Component {
+  state = {
+    superhero: 'batman'
+  }
+
   constructor( props ){
     super( props );
     // comment bind and see what will happen
@@ -9,7 +13,7 @@ class Foo extends React.Component {
   }
 
   handleClick(event){
-    alert(this);
+    alert(this.state.superhero);
   }
 
   render(){
@@ -27,7 +31,7 @@ class Bar extends React.Component {
     description: '',
   }
 
-  handleChange = name => event => {
+  handleChange = (name, event) => {
     this.setState({ [name]: event.target.value });
   }
 

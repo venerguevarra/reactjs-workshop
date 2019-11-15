@@ -2,6 +2,13 @@ import React from 'react';
 import './App.css';
 import Badge from './components/Badge';
 
+class CustomComponent extends React.Component {
+  constructor(props) {
+    super(props);
+
+
+  }
+}
 function App() {
   return (
     <div className="App">

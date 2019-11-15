@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Superhero from './Superhero';
+import CustomTextInput from './CustomTextInput';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <CustomTextInput/>
         <Superhero ref={this.superheroElement} />
         <button onClick={this.handleClick}>Show real name</button>
       </div>
